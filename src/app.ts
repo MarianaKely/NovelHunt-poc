@@ -8,6 +8,6 @@ const appRouter = Router();
 
 appRouter.use("/mainpage", registerRouter);
 appRouter.use("/writers", writersRouter);
-appRouter.use("/boks", booksRouter);
+appRouter.use("/books", booksRouter);
 
 export default appRouter;

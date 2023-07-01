@@ -46,8 +46,8 @@ async function createBook (createit: BookInfo, author_id: Number) {
     const fetchs = await novelHuntWriterRepository.allSearchs(writerId);
 
 
-    const invited = fetchs.find((param) => param.id === bookId);
-    if (invited) {throw novelHuntErrors.InternalError(`${singleWriter.name} is already linked in ${oneBook.title} at ${invited.fetched_at}`);}
+    const owner = fetchs.find((param) => param.id === bookId);
+    if (owner) {throw novelHuntErrors.InternalError(`${singleWriter.name} is already linked in ${oneBook.title} at ${owner.fetched_at}`);}
     await novelHuntBookRepositiry.fetch({ bookId, writerId });
 
   }

@@ -1,4 +1,6 @@
 
+// put the parts together to show complete information books:authors
+
 import db from "database/database";
 import { Writers , Writer, Book, Books } from "protocols/novelHuntProtocols";
 import { MainRules , Construction } from "protocols/novelHuntConfigProtocols";

@@ -1,4 +1,6 @@
 
+//my errors list
+
  function loginError(): Error {
 
     return {
@@ -63,7 +65,7 @@
 
     return {
 
-      name: "NotFoundError",
+      name: "NotFound",
       message,
 
     };

@@ -1,11 +1,12 @@
 
 export type Construction = {
 
+    shifter: any;
     backing: string;
     pts: string;
-    shifter: any;
-    retrograde?: boolean;
     sequence?: string;
+    retrograde?: boolean;
+   
 
   };
   

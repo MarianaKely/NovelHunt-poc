@@ -3,6 +3,7 @@ import { Writer , Writers } from "protocols/novelHuntProtocols";
 import novelHuntWriterRepository from "repositories/novelHuntWriterRepository";
 import novelHuntErrors from "errors/novelHuntErrors";
 
+
  async function writerList (list: Writers): Promise<Writer[]> {
 
     const listW: Writer[] =await novelHuntWriterRepository.findWriter(list);

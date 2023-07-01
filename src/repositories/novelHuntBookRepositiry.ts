@@ -5,7 +5,7 @@ import { Books  , BookInfo ,Book } from "protocols/novelHuntProtocols";
 import { theBook , subSequence } from "./novelHuntConstructionRepository";
 
 
- async function createBook (createit: BookInfo, author_id: Number): Promise<void> {
+ async function createBook (createit: BookInfo, author_id: Number): Promise <void> {
 
     const info = await db.query(` INSERT INTO band(name, author_id, date_of_publication , publisher, genre)
               VALUES ($1, $2, $3, $4, $5) returning id `,
@@ -39,6 +39,8 @@ import { theBook , subSequence } from "./novelHuntConstructionRepository";
     const results = await subSequence (clause);
 
     return results;
+ // build here
+
   }
 
 

@@ -1,12 +1,15 @@
 
+
 import { MainRules , Construction } from "protocols/novelHuntConfigProtocols";
 
 
 export function ConstctBody (putConfig: Construction[]): MainRules {
 
+   let index = 0;
+   let BlankS = "";
+
     const mainArray = [];
-    let index = 0;
-    let BlankS = "";
+   
 
     for (const mainConstct of putConfig) {
 
@@ -34,3 +37,6 @@ export function ConstctBody (putConfig: Construction[]): MainRules {
     };
 
   }
+
+
+  // use to build files from merging information

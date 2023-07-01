@@ -6,7 +6,7 @@ import { inSequence , constructWtrProfile } from "./novelHuntConstructionReposit
 
 
 
-async function findWriter (query: Writers): Promise<Writer[]> {
+async function findWriter (query: Writers): Promise <Writer[]> {
 
     const createProfile: MainRules = constructWtrProfile(query);
     const theProfile = await inSequence(createProfile);
